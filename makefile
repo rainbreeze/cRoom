@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-SRC = $(wildcard *.c SEC_1/*.c)
+SRC = $(wildcard *.c SEC_2/*.c)
 OBJ = $(SRC:.c=.o)
 
 TARGET = p.exe
@@ -17,5 +17,5 @@ $(TARGET): $(OBJ)
 clean:
 	del $(TARGET)
 	del *.o
-	del SEC_1\*.o
+	del SEC_2\*.o
 
